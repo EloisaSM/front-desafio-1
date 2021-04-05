@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: aquamarine;
+}
+
+.conteudo-container {
+    background-color: brown;
+}
+
+.aside-container {
+    background-color: chocolate;
+}
+
+.footer-container {
+    background-color: darkgoldenrod;
+}
