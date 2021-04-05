@@ -3,6 +3,11 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: #545454;
 }
 
 .container {
@@ -11,20 +16,31 @@
         "header header"
         "conteudo aside"
         "footer footer";
-    grid-template-columns: 1fr 500px;
-    grid-row: auto;
-    /* min-height: 100vh; */
+    grid-template-columns: 1fr 600px;
+    grid-row: 70px 1fr 70px;
 }
-
 
 .hearder-container {
     grid-area: header;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
 }
+
+.menu-nav {
+    width: 40%;
+}
+
+.menu-nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
 
 .conteudo-container {
     grid-area: conteudo;
-    height: 100px;
     background-color: brown;
 }
 
@@ -35,6 +51,6 @@
 
 .footer-container {
     grid-area: footer;
-    height: 100px;
+    height: 70px;
     background-color: darkgoldenrod;
 }
