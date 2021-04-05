@@ -10,14 +10,22 @@ a {
     color: #545454;
 }
 
+body {
+    color: #929292;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
 .container {
     display: grid;
     grid-template-areas: 
         "header header"
-        "conteudo aside"
+        "conteudo  aside"
         "footer footer";
-    grid-template-columns: 1fr 600px;
-    grid-row: 70px 1fr 70px;
+    grid-template-columns: 1fr 500px;
+    grid-row: min-content 1fr min-content;
 }
 
 .hearder-container {
@@ -25,6 +33,7 @@ a {
     display: flex;
     justify-content: space-around;
     padding: 14px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 .menu-nav {
@@ -34,23 +43,112 @@ a {
 .menu-nav ul {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 50px;
 }
 
-
 .conteudo-container {
     grid-area: conteudo;
-    background-color: brown;
+    margin: 56px 50px 64px 140px;
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post:last-child {
+    margin-bottom: 0px;
+}
+
+.post .info-post {
+    margin: 8px 0px 14px 0px;
+}
+
+.img-container img {
+    width:100%;
+}
+
+.descricao-btn .btn-continuar-lendo {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: auto;
+    padding: 12px 24px;
+    width: 30%;
+    border-radius: 20px;
+    border: 1px solid #FE0078;
+}
+
+.post .titulo-info,
+.post .descricao-btn {
+    padding: 24px;
 }
 
 .aside-container {
     grid-area: aside;
-    background-color: chocolate;
+    margin: 56px 140px 64px 0px;
+}
+
+.sidebar-container{
+    padding: 20px 20px;
+}
+
+.sidebar-container input {
+    border-radius: 10px;
+    border: 1px solid #EEEEEE;
+    padding: 17px 20px;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.sidebar-container,
+.post {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.sidebar-container .categorias {
+    margin-top: 25px;
+}
+
+
+.categorias ul>li {
+    padding: 16px 13px;
+    border-bottom: 2px dashed #EEEEEE;
+}
+
+.categorias .link-categoria {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-container .publicidade {
+    margin-top: 40px;
+}
+
+.publicidade h2,
+.categorias h2 {
+    margin-bottom: 40px;
+    padding-left: 15px;
+    border-left: 3px solid #FE0078;
+}
+
+.publicidade img {
+    width: 100%;
+}
+
+.publicidade .publi-2 {
+    margin: 32px 0;
 }
 
 .footer-container {
+    color: #fff;
+    height: 7;
     grid-area: footer;
-    height: 70px;
-    background-color: darkgoldenrod;
+    background: #222222;
+    padding: 25px 0px;
+    text-align: center;
 }
