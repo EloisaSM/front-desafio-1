@@ -5,18 +5,36 @@
     box-sizing: border-box;
 }
 
-.header-container {
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "conteudo aside"
+        "footer footer";
+    grid-template-columns: 1fr 500px;
+    grid-row: auto;
+    /* min-height: 100vh; */
+}
+
+
+.hearder-container {
+    grid-area: header;
     background-color: aquamarine;
 }
 
 .conteudo-container {
+    grid-area: conteudo;
+    height: 100px;
     background-color: brown;
 }
 
 .aside-container {
+    grid-area: aside;
     background-color: chocolate;
 }
 
 .footer-container {
+    grid-area: footer;
+    height: 100px;
     background-color: darkgoldenrod;
 }
