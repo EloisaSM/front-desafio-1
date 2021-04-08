@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
 </head>
 <body>
     <div class="container">
@@ -24,7 +25,7 @@
         </header>
 
         <main class="conteudo-container">
-            <div class="post">
+            <div class="post post-completo">
                 <div class="titulo-info">
                     <h2>
                         Lorem ipsum dolor sit amet
@@ -36,36 +37,68 @@
                 <div class="img-container">
                     <img src="./assets/pessoa.png" alt="mulher usando computador">
                 </div>
-                <div class="descricao-btn">
+
+                <div class="texto-container">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam.<br>
+                        <br>
                         Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod nisi elementum. Vivamus tincidunt id massa eget blandit.
                     </p>
                     
-                    <div class="btn-continuar-lendo">
-                        <a href="#">Continuar lendo</a>
-                    </div>
+                    <ul class="lista-post">
+                        <li>Lorem ipsum dolor sit amet consectetur.
+                            <ul class="sub-lista">
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Numquam, similique debitis!</li>
+                                <li>Itaque, nam labore?</li>
+                            </ul>
+                        </li>
+                        <li>Quibusdam sapiente velit nulla delectus enim?</li>
+                        <li>Officia dolore autem sint aliquid commodi!</li>
+                        <li>Eius asperiores deserunt aliquid animi quo.</li>
+                        <li>Saepe explicabo blanditiis aspernatur suscipit voluptates.</li>
+                    </ul>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. 
+                    </p>
+                    
+                    <p>
+                        Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod nisi elementum. Vivamus tincidunt id massa eget blandit.
+                    </p>
+                    
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam. 
+                        <br>
+                        <br>
+                        Curabitur sit amet euismod mi. Duis dictum vel ipsum vel tempus. Etiam diam nisl, feugiat ornare enim ac, aliquam ultrices erat. Nam tincidunt cursus dui. Integer varius nisi quis dui commodo, vitae euismod nisi elementum. Vivamus tincidunt id massa eget blandit.
+                    </p>
                 </div>
             </div>
+            
+            <h2>Comentários</h2>
+            <form class="form-container" action="">
+                <div class="inputs-nome-email">
 
-            <form action="">
-                <div>
-                    <label for="email">E-mail</label>
+                    <div class="email">
+                        <label for="email" >E-mail</label>
+                        <input type="email" name="emailTxt" id="email">
+                    </div>
+
+                    <div class="nome">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nomeTxt" id="nome">
+                    </div>
                 </div>
-                <input type="text" name="emailTxt" id="email">
-
-                <div>
-                    <label for="email">Nome</label>
-                </div>
-                <input type="text" name="nomelTxt" id="email">
-
-                <div>
+                
+                <div class="input-comentario">
                     <label for="comentario">Comentário</label>
+                    <textarea name="comentarioTxt" id="" cols="30" rows="10"></textarea>
                 </div>
-                <textarea name="comentarioTxt" id="comentario" cols="30" rows="10"></textarea>
+                <button class="btn btn-comentar">Comentar</button>
             </form>
         </main>
-
+        
         <aside class="aside-container">
             <div class="sidebar-container">
 
