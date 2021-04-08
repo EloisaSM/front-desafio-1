@@ -1,0 +1,30 @@
+.box-contato {
+    padding: 24px;
+}
+
+.box-contato>p{
+    margin: 24px 0 32px 0;
+}
+
+.endereco {
+    margin-top: 24px;
+}
+
+.suporte {
+    margin-bottom: 40px;
+}
+
+.endereco,
+.telefone {
+    margin-bottom: 24px;
+}
+
+.endereco h4,
+.telefone h4,
+.suporte h4 {
+    display: inline-block;
+    vertical-align: super;
+    margin-left: 0.5rem;
+}
+
+
