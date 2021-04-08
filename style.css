@@ -38,12 +38,15 @@ h1, h2, h3 {
 .hearder-container {
     grid-area: header;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 14px 0;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
     background: #fff;
 }
 
+.logo{
+    margin-left: 140px;
+}
 .menu-nav {
     width: 40%;
 }
@@ -58,15 +61,12 @@ h1, h2, h3 {
 
 .conteudo-container {
     grid-area: conteudo;
-    /* margin: 56px 50px 64px 140px; */
-    background-color: #fff;
-    /* width: 50%; */
+    margin: 56px 0 64px 0;
 }
 
 .post {
     margin-bottom: 40px;
     background: #fff;
-    
 }
 
 .post:last-child {
@@ -114,9 +114,9 @@ h1, h2, h3 {
 
 .aside-container {
     grid-area: aside;
-    /* margin: 56px 140px 64px 0px; */
+    margin: 56px 0 64px 0;
     background: #fff;
-    /* height: 57.5%; */
+    height: 89rem;
 }
 
 .sidebar-container{
