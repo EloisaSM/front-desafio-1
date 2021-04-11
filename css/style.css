@@ -33,7 +33,7 @@ body {
         "header header header header header"
         ". conteudo . aside ."
         "footer footer footer footer footer";
-    grid-template-columns: 140px 12fr 1fr 6fr 140px;  
+    grid-template-columns: 140px 3fr 0.2fr 1.2fr 140px;  
 }
 
 /* header */
@@ -119,13 +119,12 @@ body {
 /* sidebar */
 .aside-container {
     grid-area: aside;
-    margin: 56px 0 64px 0;
-    background: #fff;
-    height: 89rem;
+    margin: 56px 0 64px;
 }
 
 .sidebar-container{
     padding: 20px 20px;
+    background: #fff;
 }
 
 .sidebar-container input {
